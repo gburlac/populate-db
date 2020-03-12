@@ -7,8 +7,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class DB_conection {
-    private Connection conn;
+
     private Properties_reader properties_reader = Properties_reader.getInstance();
+    private Connection conn;
     private static final org.apache.log4j.Logger Logger = org.apache.log4j.Logger.getLogger(DB_conection.class);
 
     public DB_conection() {
